@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Table</title>
+    <style>
+        body {
+            font-family: serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 200px;
+            text-align: center;
+            background-color: rgba(36, 42, 83, 0.9); /* Slight transparency */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        td {
+            padding: 15px;
+            color: #fff;
+        }
+        tr:not(:last-child) {
+            border-bottom: 2px solid #fff; /* White line between rows */
+        }
+        td:first-child {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .header-pro {
+            background-color: rgba(4, 195, 195, 0.9); /* Slight transparency */
+        }
+        .header-business {
+            background-color: rgba(56, 56, 157, 0.9); /* Slight transparency */
+        }
+        .header-dev {
+            background-color: rgba(4, 195, 195, 0.9); /* Slight transparency */
+        }
+        .price {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .price small {
+            font-size: 0.6em;
+            color: rgba(255, 255, 255, 0.8); /* Subtle transparency for /Month */
+            display: block;
+            margin-top: 5px;
+        }
+        td span {
+            opacity: 0.7; /* Reduced transparency for Domain(s), Addons, Support */
+        }
+        .button {
+            background-color: rgba(36, 42, 83, 0.9); /* Button with light transparency */
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-style: serif;
+            font-size: larger;
+            padding: 10px;
+            
+            cursor: pointer;
+            
+        }
+        .button:hover {
+            background-color: rgba(4, 195, 195, 0.9);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+   
+        <table>
+            <tr><td class="header-pro">PRO</td></tr>
+            <tr><td class="price">$50<br><small>/Month</small></td></tr>
+            <tr><td>1 <span>Domain(s)</span></td></tr>
+            <tr><td><span>Addons</span></td></tr>
+            <tr><td>1 Year <span>Support</span></td></tr>
+            <tr><td><button class="button">Buy Now</button></td></tr>
+        </table>
+
+    
+        <table>
+            <tr><td class="header-business">BUSINESS</td></tr>
+            <tr><td class="price">$110<br><small>/Month</small></td></tr>
+            <tr><td>5 <span>Domain(s)</span></td></tr>
+            <tr><td><span>Addons</span></td></tr>
+            <tr><td>1 Year <span>Support</span></td></tr>
+            <tr><td><button class="button">Buy Now</button></td></tr>
+        </table>
+
+        <table>
+            <tr><td class="header-dev">DEV</td></tr>
+            <tr><td class="price">$210<br><small>/Month</small></td></tr>
+            <tr><td>Unlimited <span>Domain(s)</span></td></tr>
+            <tr><td><span>Addons</span></td></tr>
+            <tr><td>Lifetime <span>Support</span></td></tr>
+            <tr><td><button class="button">Buy Now</button></td></tr>
+        </table>
+    </div>
+</body>
+</html>
